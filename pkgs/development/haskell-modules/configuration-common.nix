@@ -879,4 +879,6 @@ self: super: {
   # https://github.com/cartazio/arithmoi/issues/49
   arithmoi = overrideCabal super.arithmoi (drv: { doCheck = !pkgs.stdenv.isi686; });
 
+  # http://hydra.nixos.org/build/45110274
+  tasty-ant-xml = doJailbreak super.tasty-ant-xml;
 }
